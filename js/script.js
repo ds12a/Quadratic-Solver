@@ -1,7 +1,7 @@
 window.onerror = function(msg, url, linenumber) {
     alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
     return true;
-}
+};
 
 var out = document.getElementById('calculations');
 
