@@ -37,6 +37,6 @@ function updateCalculations() {
   alert(out.outerHTML);
 }
 
-a.onkeyup = function() {updateCalculations();};
-b.onkeyup = function() {updateCalculations();};
-c.onkeyup = function() {updateCalculations();};
+aInput.onkeyup = function() {updateCalculations();};
+bInput.onkeyup = function() {updateCalculations();};
+cInput.onkeyup = function() {updateCalculations();};
