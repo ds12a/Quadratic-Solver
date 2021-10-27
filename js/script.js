@@ -20,11 +20,17 @@ function updateCalculations() {
   var b = parseFloat(bInput.value);
   var c = parseFloat(cInput.value);
   
+  alert(a);
+  alert(b);
+  alert(c);
+  
   var discriminant = 0; // CHANGE
   var r1 = 1;
   var r2 = 2;
   
   out.outerHTML = buildCalculations(r1, r2, 2);
+  
+  alert(out.outerHTML);
 }
 
 a.onkeyup = updateCalculations();
