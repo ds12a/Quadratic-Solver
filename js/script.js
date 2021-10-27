@@ -33,6 +33,6 @@ function updateCalculations() {
   alert(out.outerHTML);
 }
 
-a.onkeyup = updateCalculations();
-b.onkeyup = updateCalculations();
-c.onkeyup = updateCalculations();
+a.onkeyup = function() {updateCalculations();};
+b.onkeyup = function() {updateCalculations();};
+c.onkeyup = function() {updateCalculations();};
