@@ -10,11 +10,11 @@ var bInput = document.getElementById('b');
 var cInput = document.getElementById('c');
 
 function buildCalculations(r1, r2, numSolutions) {
-  var solutionInfo = "<p>";
+  var solutionInfo = "<div id="calculations"><p>";
   if (numSolutions == 0) solutionInfo = "NO ROOTS";
   else if (numSolutions == 1) solutionInfo = "One root:</p><p>x = " + toString(r1);
   else if (numSolutions == 2) solutionInfo = "Two roots:</p><p>x = " + toString(r1) + "</p>" + "<p> x = "+ toString(r1);
-  solutionInfo += "</p>";
+  solutionInfo += "</p></div>";
   
   return solutionInfo;
 }
