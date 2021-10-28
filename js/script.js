@@ -3,8 +3,6 @@ window.onerror = function(msg, url, linenumber) {
     return true;
 };
 
-var out = document.getElementById('calculations');
-
 var aInput = document.getElementById('a');
 var bInput = document.getElementById('b');
 var cInput = document.getElementById('c');
@@ -32,6 +30,7 @@ function updateCalculations() {
   var r1 = 1;
   var r2 = 2;
   
+  var out = document.getElementById('calculations');
   out.outerHTML = buildCalculations(r1, r2, 2);
   
   alert(out.outerHTML);
