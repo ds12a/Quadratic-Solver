@@ -22,10 +22,6 @@ function updateCalculations() {
   var b = parseFloat(bInput.value);
   var c = parseFloat(cInput.value);
   
-  alert(a);
-  alert(b);
-  alert(c);
-  
   var discriminant = b*b - 4 * a * c; 
   var numSolutions = 0;
   if (discriminant == 0) numSolutions = 1;
@@ -35,10 +31,8 @@ function updateCalculations() {
   var r2 = (-1 * b - Math.sqrt(discriminant)) / (2 * a);
   
   var out = document.getElementById('calculations');
-  alert(out.innerHTML);
   out.innerHTML = buildCalculations(r1, r2, numSolutions);
   
-  alert(out.innerHTML);
 }
 
 aInput.onkeyup = function() {updateCalculations();};
