@@ -26,13 +26,17 @@ function updateCalculations() {
   alert(b);
   alert(c);
   
-  var discriminant = 0; // CHANGE
-  var r1 = 1;
-  var r2 = 2;
+  var discriminant = b*b - 4 * a * c; 
+  var numSolutions = 0;
+  if (discriminant == 0) numSolutions = 1;
+  else if (discriminant > 0) numSolutions = 2;
+  
+  var r1 = (-1 * b + Math.sqrt(discriminant)) / (2 * a);
+  var r2 = (-1 * b - Math.sqrt(discriminant)) / (2 * a);
   
   var out = document.getElementById('calculations');
   alert(out.innerHTML);
-  out.innerHTML = buildCalculations(r1, r2, 2);
+  out.innerHTML = buildCalculations(r1, r2, numSolutions);
   
   alert(out.innerHTML);
 }
